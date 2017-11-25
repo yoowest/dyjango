@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'materialize.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+    <body>
+
+      <div class="row">
+
+     <div class="main col s12 col l6 offset-l3 col m8 offset-m2 col xl6 offset-xl3">
+     <div class="letter flow-text">A</div>
+     <div class="letter flow-text">L</div>
+     <div class="letter flow-text">I</div>
+     <div class="letter flow-text">N</div>
+     <div class="letter flow-text">T</div>
+     <div class="letter flow-text">I</div>
+     <div class="letter flow-text">L</div>
+     <div class="letter flow-text">A</div>
+     <div class="letter flow-text">R</div>
+
+     </div>
+
+    </div>
+
+     <p class="main-quote">
+       En iyi kitapların okunması, geçmiş yüzyılların en büyük insanlarıyla konuşmak gibidir...
+     </p>
+
+    <div class="row">
+      <div class="col l10 offset-l1 col m10 offset-m1 col s10 offset-s1">
+    <div class="mycontainer">
+     {% for article in articles %}
+    <div class="single">
+      <p>
+        {{ article.body }}
+      </p>
+
+      <span class="mtitle">{{ article.title }}</span>
+
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="{% static 'jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'materialize.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey|Open+Sans|Quicksand|Source+Sans+Pro');
+
+*{
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Happy Monkey', cursive;
+  box-sizing: border-box;
+
+
+}
+
+body {
+  background-color: #131418;
+  color:white;
+}
+
+
+.mycontainer {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.single{
+  border-bottom: 1px solid #333;
+  height:auto;
+  width:300px;
+  background-color: #ecf0f1;
+  border-left: 7px solid #9b59b6;
+  padding: 10px;
+  margin: 5px;
+
+}
+
+.single p{
+  font-family: 'Quicksand', sans-serif;
+  padding: 15px;
+  font-size: 20px;
+  color:#333;
+
+
+}
+
+.mtitle{
+  font-family: 'Happy Monkey', cursive;
+  color:#8e44ad;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+}
+
+.mycontainer small{
+  font-weight: bold;
+  padding: 5px;
+  padding-top: 15px;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
+.letter{
+  color:#ecf0f1;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #131418;
+  padding: 1em;
+  margin: 5px;
+  border-bottom: 1px solid #333;
+  font-size: 3em;
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.63);
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.main-quote{
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  border-top: 3px dashed #9b59b6;
+  border-bottom: 2px dashed #9b59b6;
+  font-size: 17px;
+}
+
+@media only screen and (max-width : 400px) {
+.main{
+  width: 100%;
+  overflow: hidden;
+}
+
+.letter{
+  margin: 0px;
+  padding: 12px;
+
+}
+
+.mtitle{
+  text-align: center;
+  align-self: center;
+}
+}
